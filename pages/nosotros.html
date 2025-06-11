@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Web</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-brand">
+                <img class="navbar-logo" src="../img/logos/logo-example.png" alt="logo">
+                </div>
+                
+                <button class="navbar-toggler" id="navbarToggler">
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+                </button>
+
+                <ul class="menu" id="navbarMenu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./nosotros.html">About Us</a></li>
+                <li><a href="./soluciones.html">Elements</a></li>
+                <li><a href="./blog.html">News</a></li>
+                <li><a href="./contacto.html">Connect</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop plays-inline class="hero-video">
+            <source src="../vid/hero_video.mp4" type="video/mp4">
+        </video>
+
+        <h1 class="hero-h1">
+            /No name; no id_
+        </h1>
+    </section>
+
+    <section class="about-us">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Example text to complement title<br>Example text to complement title</p>
+            </div>
+            <div class="about-logo">
+                <h3>COMPANY NAME</h3>
+                <p>Company Slogan</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><strong>helloworld@example.com<br>+54 11 2345-6789</strong></p>
+            </div>
+            <div class="footer-logo">
+                <img src="../img/logos/logo-example.png" alt="logo-example">
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/feed/" target="_blank">
+                    <img src="../img/social-media/linkedin-logo.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="../img/social-media/facebook-logo.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="../img/social-media/instagram-logo.png" alt="Instagram">
+                </a>
+                <a href="https://x.com/" target="_blank">
+                    <img src="../img/social-media/x-logo.png" alt="X">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>document.getElementById('navbarToggler').addEventListener('click', function() {const menu = document.getElementById('navbarMenu');menu.classList.toggle('show');});</script>
+</body>
+</html>
