@@ -1,0 +1,33 @@
+/* Clients Section */
+.clients {
+  padding-top: 20px;
+}
+
+.clients h2 {
+  font-weight: 800;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin: 35px;
+  text-align: center;
+  color: $color-white;
+}
+
+.clients-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.client-logo {
+  min-width: 250px;
+  height: 200px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.client-logo:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}

@@ -1,0 +1,81 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.container-hero-h1 {
+  display: inline-block;
+}
+
+.hero-h1 {
+  z-index: 2;
+  text-align: center;
+  font-weight: 800;
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  padding: 20px;
+  color: $color-white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s forwards;
+  position: relative;
+}
+
+.hero-h1::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 5%;
+  height: 90%;
+  width: 10px;
+  background: $color-white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  animation: cursor 0.9s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+@keyframes cursor {
+  from, to { opacity: 1; }
+  50%     { opacity: 0; }
+}
+
+@include respond(xs) {
+  .hero-h1 {
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    font-size: clamp(2rem, 6vw, 4rem);
+    padding: 20px 1rem;
+    max-width: calc(100% - 2rem);
+    margin: 0 auto;
+  }
+}
+
+@include respond(xxs) {
+  .hero-h1 {
+    font-size: clamp(1.5rem, 8vw, 3rem);
+    padding: 20px 0.5rem;
+    max-width: calc(100% - 1rem);
+  }
+}
