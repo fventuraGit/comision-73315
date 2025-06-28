@@ -74,9 +74,43 @@
                 <label>& also...</label>
                 <textarea placeholder="u really like to talk huh?"></textarea>
             </div>
-            <button type="submit">Send</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verticalModal">Send</button>
         </form>
     </section>
+
+    <div
+        class="modal fade"
+        id="verticalModal"
+        tabindex="-1"
+        aria-labelledby="verticalModalLabel"
+        aria-hidden="true"
+        >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="verticalModalLabel">Connection sent;</h5>
+                <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                At this point idk what to put in here xD...
+            </div>
+            <div class="modal-footer">
+                <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+                >
+                Close
+                </button>
+            </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer-container">
@@ -103,6 +137,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script>document.getElementById('navbarToggler').addEventListener('click', function() {const menu = document.getElementById('navbarMenu');menu.classList.toggle('show');});</script>
 </body>
 </html>

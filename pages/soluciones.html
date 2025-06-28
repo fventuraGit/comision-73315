@@ -51,40 +51,124 @@
     <section class="solutions">
         <h2>Elements.</h2>
         <div class="solutions-container">
-            <a href="./soluciones.html">
-                <div class="solution-card">
-                    <div class="image-placeholder">
-                        <img class="image-placeholder-content" src="../gifs/element_bubbles.gif", alt="Bubbles">    
-                    </div>
-                    <h3>/Bubbles;</h3>
+            <div
+                class="solution-card"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalBubbles"
+                >
+                <div class="image-placeholder">
+                    <img
+                    class="image-placeholder-content"
+                    src="../gifs/element_bubbles.gif"
+                    alt="Bubbles"
+                    />
                 </div>
-            </a>
-            <a href="./soluciones.html">
-                <div class="solution-card">
-                    <div class="image-placeholder">
-                        <img class="image-placeholder-content" src="../gifs/element_glow.gif", alt="Glow">    
-                    </div>
-                    <h3>/Liquid;</h3>
+                <h3>/Bubbles;</h3>
+            </div>
+            <div
+                class="solution-card"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalGlow"
+                >
+                <div class="image-placeholder">
+                    <img
+                    class="image-placeholder-content"
+                    src="../gifs/element_glow.gif"
+                    alt="Glow"
+                    />
                 </div>
-            </a>
-            <a href="./soluciones.html">
-                <div class="solution-card">
-                    <div class="image-placeholder">
-                        <img class="image-placeholder-content" src="../gifs/element_sea.gif", alt="Sea">    
-                    </div>
-                    <h3>/Waves;</h3>
+                <h3>/Liquid;</h3>
+            </div>
+            <div
+                class="solution-card"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalSea"
+                >
+                <div class="image-placeholder">
+                    <img
+                    class="image-placeholder-content"
+                    src="../gifs/element_sea.gif"
+                    alt="Sea"
+                    />
                 </div>
-            </a>
-            <a href="./soluciones.html">
-                <div class="solution-card">
-                    <div class="image-placeholder">
-                        <img class="image-placeholder-content" src="../gifs/element_smoke.gif", alt="Smoke">    
-                    </div>
-                    <h3>/Smoke;</h3>
+                <h3>/Waves;</h3>
+            </div>
+            <div
+                class="solution-card"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalSmoke"
+                >
+                <div class="image-placeholder">
+                    <img
+                    class="image-placeholder-content"
+                    src="../gifs/element_smoke.gif"
+                    alt="Smoke"
+                    />
                 </div>
-            </a>
+                <h3>/Smoke;</h3>
+            </div>
         </div>
     </section>
+
+    <div class="modal fade" id="modalBubbles" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">/Bubbles;</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                Dive into the Bubbles experience: interactive spheres that gently float and react to your cursor’s movement, symbolizing the playful emergence of ideas. Their soft, translucent appearance adds a light, dynamic layer to the interface without overpowering the overall design.
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalGlow" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">/Liquid;</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                Discover the Liquid concept: smooth, flowing shapes that morph seamlessly across the screen, echoing the adaptability and elegance of modern web design. Perfect for highlighting key content transitions and creating an immersive, fluid user journey.
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalSea" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">/Waves;</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                Experience the Waves element: rhythmic, undulating patterns that mimic the soothing motion of the ocean. This dynamic backdrop guides the viewer’s eye naturally through your content, infusing the page with balance and harmony.
+            </div>
+            </div>
+        </div>
+    </div>    
+
+    <div class="modal fade" id="modalSmoke" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">/Smoke;</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                Explore the Smoke effect: delicate wisps that drift and swirl, evoking an ethereal, atmospheric mood. Ideal for adding depth and intrigue to your layout, drawing attention to featured sections with subtle, refined flair.
+            </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer-container">
@@ -111,6 +195,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script>document.getElementById('navbarToggler').addEventListener('click', function() {const menu = document.getElementById('navbarMenu');menu.classList.toggle('show');});</script>
 </body>
 </html>
