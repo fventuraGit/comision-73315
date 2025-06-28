@@ -1,0 +1,59 @@
+/* About Us Section */
+.about-us {
+  padding: 50px 20px;
+}
+
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-text h2 {
+  font-weight: 800;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-bottom: 20px;
+  text-align: center;
+  color: $color-text;
+}
+
+.about-text p {
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: $font-size-base;
+  color: $color-text;
+  margin-bottom: 1.5rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 40px;
+}
+
+.about-item {
+  padding: 30px 20px;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.about-item:nth-child(3n) {
+  border-right: none;
+}
+
+.about-item:nth-last-child(-n+3) {
+  border-bottom: none;
+}
+
+.about-item h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 0 1rem;
+  color: $color-text;
+  line-height: 1.2;
+}
+
+.about-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: $color-gray;
+}

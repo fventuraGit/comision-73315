@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Trap';
+  src: url('../fonts/Trap-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Trap';
+  src: url('../fonts/Trap-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Trap';
+  src: url('../fonts/Trap-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Trap';
+  src: url('../fonts/Trap-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Trap';
+  src: url('../fonts/Trap-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Trap';
+  src: url('../fonts/Trap-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Trap';
+  src: url('../fonts/Trap-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trap', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+  font-weight: 400;
+}
+
+.navbar a,
+.marketing-button,
+.news-card button {
+  font-weight: 700; /* Trap-Bold */
+}
+.marketing-text h2 {
+  font-weight: 900; /* Trap-Black */
+}
+.about-text p {
+  font-weight: 300; /* Trap-Light */
+  line-height: 1.6;
+}

@@ -1,0 +1,20 @@
+// Colores base
+$color-primary: #e11d48;
+$color-dark: #333;
+$color-light: #f5f5f5;
+$color-white: #fff;
+$color-gray: #666;
+$color-text: #111;
+
+// Breakpoints de la resolución
+$breakpoint-lg: 1080px;
+$breakpoint-md: 1024px;
+$breakpoint-sm: 900px;
+$breakpoint-xs: 768px;
+$breakpoint-xxs: 480px;
+
+// Tipografía
+$font-size-base: 1rem;
+$font-size-h1: clamp(2.5rem, 5vw, 5rem);
+$font-size-h2: 2rem;
+$font-size-h3: 1.5rem;
